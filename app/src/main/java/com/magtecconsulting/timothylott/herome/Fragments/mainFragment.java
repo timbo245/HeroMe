@@ -7,13 +7,14 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.magtecconsulting.timothylott.herome.R;
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link mainFragment.OnFragmentInteractionListener} interface
+ * {@link mainFragment.MainFragmentInteractionListener} interface
  * to handle interaction events.
  * Use the {@link mainFragment#newInstance} factory method to
  * create an instance of this fragment.
@@ -28,7 +29,12 @@ public class mainFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    private OnFragmentInteractionListener mListener;
+    private Button accidentBtn;
+    private Button geneticBtn;
+    private Button bornBtn;
+    private Button chooseBtn;
+
+    private MainFragmentInteractionListener mListener;
 
     public mainFragment() {
         // Required empty public constructor
@@ -64,22 +70,33 @@ public class mainFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_main, container, false);
+
+        accidentBtn = (Button)view.findViewById(R.id.accidentBtn);
+        geneticBtn = (Button)view.findViewById(R.id.geneticBtn);
+        bornBtn = (Button)view.findViewById(R.id.bornBtn);
+        chooseBtn = (Button)view.findViewById(R.id.chooseBtn);
+
+        chooseBtn.setEnabled(false);
+        chooseBtn.getBackground().setAlpha(128);
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_main, container, false);
+        return view;
+
     }
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
         if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
+            mListener.onMainFragmentInteration(uri);
         }
     }
 
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        if (context instanceof OnFragmentInteractionListener) {
-            mListener = (OnFragmentInteractionListener) context;
+        if (context instanceof MainFragmentInteractionListener) {
+            mListener = (MainFragmentInteractionListener) context;
         } else {
             throw new RuntimeException(context.toString()
                     + " must implement OnFragmentInteractionListener");
@@ -102,8 +119,8 @@ public class mainFragment extends Fragment {
      * "http://developer.android.com/training/basics/fragments/communicating.html"
      * >Communicating with Other Fragments</a> for more information.
      */
-    public interface OnFragmentInteractionListener {
+    public interface MainFragmentInteractionListener {
         // TODO: Update argument type and name
-        void onFragmentInteraction(Uri uri);
+        void onMainFragmentInteration(Uri uri);
     }
 }
