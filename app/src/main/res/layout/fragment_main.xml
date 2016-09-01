@@ -45,7 +45,6 @@
             android:textColor="#FFC647"
             android:layout_marginTop="15dp"
             android:drawableLeft="@drawable/lightning_icon"
-            android:drawableRight="@drawable/item_selected_btn"
             android:paddingLeft="5dp"
             android:paddingRight="10dp" />
 
@@ -59,7 +58,6 @@
             android:textColor="#FFC647"
             android:layout_marginTop="15dp"
             android:drawableLeft="@drawable/atomic_icon"
-            android:drawableRight="@drawable/item_selected_btn"
             android:paddingLeft="5dp"
             android:paddingRight="10dp" />
 
@@ -73,7 +71,6 @@
             android:textColor="#FFC647"
             android:layout_marginTop="15dp"
             android:drawableLeft="@drawable/rocket_icon"
-            android:drawableRight="@drawable/item_selected_btn"
             android:paddingLeft="5dp"
             android:paddingRight="10dp" />
 
