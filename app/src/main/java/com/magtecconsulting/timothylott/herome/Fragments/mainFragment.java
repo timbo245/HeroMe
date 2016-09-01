@@ -96,6 +96,8 @@ public class mainFragment extends Fragment implements View.OnClickListener {
         chooseBtn.getBackground().setAlpha(255);
 
         accidentBtn.setCompoundDrawablesWithIntrinsicBounds(R.drawable.lightning_icon,0,0,0);
+        geneticBtn.setCompoundDrawablesWithIntrinsicBounds(R.drawable.atomic_icon,0,0,0);
+        bornBtn.setCompoundDrawablesWithIntrinsicBounds(R.drawable.rocket_icon,0,0,0);
 
         Button btn = (Button)v;
         int leftDrawable = 0;
@@ -109,6 +111,7 @@ public class mainFragment extends Fragment implements View.OnClickListener {
         }
 
         btn.setCompoundDrawablesWithIntrinsicBounds(leftDrawable,0,R.drawable.item_selected_btn,0);
+
     }
 
     // TODO: Rename method, update argument and hook method into UI event
