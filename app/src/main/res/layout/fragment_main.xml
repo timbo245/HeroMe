@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     tools:context="com.magtecconsulting.timothylott.herome.Fragments.mainFragment"
     android:id="@+id/toolbar"
-    android:minHeight="?attr/actionBarSize">
+    android:minHeight="?attr/actionBarSize"
+    android:background="@drawable/hero_bg_gradient">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -33,6 +34,62 @@
             android:layout_gravity="center_horizontal"
             android:src="@drawable/heroes"
             android:layout_marginTop="15dp" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:text="Came by accident"
+            android:id="@+id/button"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/hero_button"
+            android:textColor="#FFC647"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/lightning_icon"
+            android:drawableRight="@drawable/item_selected_btn"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:text="Genetic Mutation"
+            android:id="@+id/button2"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/hero_button"
+            android:textColor="#FFC647"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/atomic_icon"
+            android:drawableRight="@drawable/item_selected_btn"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:text="Born With Them"
+            android:id="@+id/button3"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/hero_button"
+            android:textColor="#FFC647"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/rocket_icon"
+            android:drawableRight="@drawable/item_selected_btn"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:text="Choose Powers"
+            android:id="@+id/button4"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/hero_solid_button"
+            android:textColor="#101612"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:backgroundTint="#FAC740"
+            android:textSize="22dp" />
 
     </LinearLayout>
 
