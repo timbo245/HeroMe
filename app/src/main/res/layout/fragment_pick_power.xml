@@ -3,12 +3,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.magtecconsulting.timothylott.herome.Fragments.PickPowerFragment"
-    android:id="@+id/pickPowerScreen">
+    android:id="@+id/pickPowerScreen"
+    android:background="@drawable/hero_bg_gradient">
 
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="PICK A POWER"
+        android:textStyle="bold"
+        android:textColor="#FAC740"
+        android:id="@+id/pickPowerTxt"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/hero_button"
+        android:text="Turtle Power" />
 
 </FrameLayout>

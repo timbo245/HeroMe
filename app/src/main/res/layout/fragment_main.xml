@@ -13,6 +13,18 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="How did you get your powers?"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FFC647"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp" />
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -25,6 +37,8 @@
             android:layout_width="300dp"
             android:layout_height="55dp"
             android:text="Came by accident"
+            android:textAllCaps="false"
+            android:textStyle="bold"
             android:id="@+id/accidentBtn"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/hero_button"
@@ -32,7 +46,8 @@
             android:layout_marginTop="15dp"
             android:drawableLeft="@drawable/lightning_icon"
             android:paddingLeft="5dp"
-            android:paddingRight="10dp" />
+            android:paddingRight="10dp"
+            android:textSize="20dp" />
 
         <Button
             android:layout_width="300dp"
@@ -45,7 +60,10 @@
             android:layout_marginTop="15dp"
             android:drawableLeft="@drawable/atomic_icon"
             android:paddingLeft="5dp"
-            android:paddingRight="10dp" />
+            android:paddingRight="10dp"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
 
         <Button
             android:layout_width="300dp"
@@ -58,7 +76,10 @@
             android:layout_marginTop="15dp"
             android:drawableLeft="@drawable/rocket_icon"
             android:paddingLeft="5dp"
-            android:paddingRight="10dp" />
+            android:paddingRight="10dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textSize="20dp" />
 
         <Button
             android:layout_width="300dp"
