@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.magtecconsulting.timothylott.herome.Activities.MainActivity;
 import com.magtecconsulting.timothylott.herome.R;
 
 /**
@@ -19,7 +20,7 @@ import com.magtecconsulting.timothylott.herome.R;
  * Use the {@link PickPowerFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class PickPowerFragment extends Fragment {
+public class PickPowerFragment extends Fragment implements View.OnClickListener {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -30,7 +31,7 @@ public class PickPowerFragment extends Fragment {
     private String mParam2;
 
     private Button turtleBtn;
-    private Button lightningBtb;
+    private Button lightningBtn;
     private Button flightBtn;
     private Button webBtn;
     private Button laserBtn;
@@ -77,13 +78,50 @@ public class PickPowerFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_pick_power, container, false);
 
         turtleBtn = (Button)view.findViewById(R.id.turtleBtn);
-        
+        lightningBtn = (Button)view.findViewById(R.id.lightingBtn);
+        flightBtn = (Button)view.findViewById(R.id.flightBtn);
+        webBtn = (Button)view.findViewById(R.id.webBtn);
+        laserBtn = (Button)view.findViewById(R.id.laserBtn);
+        superBtn = (Button)view.findViewById(R.id.superBtn);
+        backstoryBtn = (Button)view.findViewById(R.id.backstoryBtn);
+
+        turtleBtn.setOnClickListener(this);
+        lightningBtn.setOnClickListener(this);
+        flightBtn.setOnClickListener(this);
+        webBtn.setOnClickListener(this);
+        laserBtn.setOnClickListener(this);
+        superBtn.setOnClickListener(this);
+
+        backstoryBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity mainActivity = (MainActivity)getActivity();
+                mainActivity.loadBackstoryScreen();
+            }
+        });
+
+        backstoryBtn.setEnabled(false);
+        backstoryBtn.getBackground().setAlpha(128);
+
 
 
         return view;
     }
 
+    @Override
+    public void onClick(View v) {
+        backstoryBtn.setEnabled(true);
+        backstoryBtn.getBackground().setAlpha(255);
 
+        turtleBtn.setCompoundDrawablesWithIntrinsicBounds(R.drawable.turtlepower_icon,0,0,0);
+        lightningBtn.setCompoundDrawablesWithIntrinsicBounds(R.drawable.lightning_icon,0,0,0);
+        flightBtn.setCompoundDrawablesWithIntrinsicBounds(R.drawable.rocket_icon,0,0,0);
+        webBtn.setCompoundDrawablesWithIntrinsicBounds(R.drawable.spiderweb_icon,0,0,0);
+        laserBtn.setCompoundDrawablesWithIntrinsicBounds(R.drawable.laservision_icon,0,0,0);
+        superBtn.setCompoundDrawablesWithIntrinsicBounds(R.drawable.superstrength_icon,0,0,0);
+
+
+    }
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
