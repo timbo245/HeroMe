@@ -120,7 +120,24 @@ public class PickPowerFragment extends Fragment implements View.OnClickListener 
         laserBtn.setCompoundDrawablesWithIntrinsicBounds(R.drawable.laservision_icon,0,0,0);
         superBtn.setCompoundDrawablesWithIntrinsicBounds(R.drawable.superstrength_icon,0,0,0);
 
+        Button powersBtn = (Button)v;
+        int powersLeftDrawable = 0;
 
+        if (powersBtn == turtleBtn) {
+            powersLeftDrawable = R.drawable.turtlepower_icon;
+        } else if (powersBtn == lightningBtn) {
+            powersLeftDrawable = R.drawable.lightning_icon;
+        } else if (powersBtn == flightBtn) {
+            powersLeftDrawable = R.drawable.rocket_icon;
+        } else if (powersBtn == webBtn) {
+            powersLeftDrawable = R.drawable.spiderweb_icon;
+        } else if (powersBtn == laserBtn) {
+            powersLeftDrawable = R.drawable.laservision_icon;
+        } else if (powersBtn == superBtn) {
+            powersLeftDrawable = R.drawable.superstrength_icon;
+        }
+
+        powersBtn.setCompoundDrawablesWithIntrinsicBounds(powersLeftDrawable,0,R.drawable.item_selected_btn,0);
     }
 
     // TODO: Rename method, update argument and hook method into UI event

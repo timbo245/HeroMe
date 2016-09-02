@@ -38,8 +38,7 @@
         android:textColor="#FFC647"
         android:drawableLeft="@drawable/turtlepower_icon"
         android:paddingLeft="5dp"
-        android:paddingRight="10dp"
-        android:drawableRight="@drawable/item_selected_btn" />
+        android:paddingRight="10dp"/>
 
     <Button
         android:layout_width="300dp"
@@ -55,8 +54,7 @@
         android:textColor="#FFC647"
         android:drawableLeft="@drawable/thorshammer_icon"
         android:paddingLeft="5dp"
-        android:paddingRight="10dp"
-        android:drawableRight="@drawable/item_selected_btn" />
+        android:paddingRight="10dp" />
 
         <Button
             android:layout_width="300dp"
@@ -72,8 +70,7 @@
             android:textColor="#FFC647"
             android:drawableLeft="@drawable/supermancrest_icon"
             android:paddingLeft="5dp"
-            android:paddingRight="10dp"
-            android:drawableRight="@drawable/item_selected_btn" />
+            android:paddingRight="10dp" />
 
         <Button
             android:layout_width="300dp"
@@ -89,8 +86,7 @@
             android:textColor="#FFC647"
             android:drawableLeft="@drawable/spiderweb_icon"
             android:paddingLeft="5dp"
-            android:paddingRight="10dp"
-            android:drawableRight="@drawable/item_selected_btn" />
+            android:paddingRight="10dp"/>
 
         <Button
             android:layout_width="300dp"
@@ -106,8 +102,7 @@
             android:textColor="#FFC647"
             android:drawableLeft="@drawable/laservision_icon"
             android:paddingLeft="5dp"
-            android:paddingRight="10dp"
-            android:drawableRight="@drawable/item_selected_btn" />
+            android:paddingRight="10dp"/>
 
         <Button
             android:layout_width="300dp"
@@ -123,8 +118,7 @@
             android:textColor="#FFC647"
             android:drawableLeft="@drawable/superstrength_icon"
             android:paddingLeft="5dp"
-            android:paddingRight="10dp"
-            android:drawableRight="@drawable/item_selected_btn" />
+            android:paddingRight="10dp"/>
 
         <Button
             android:layout_width="300dp"
